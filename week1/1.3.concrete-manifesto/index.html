@@ -7,15 +7,95 @@
         Use this page to complete the "Concrete Manifesto" exercise:
         https://canvas.umw.edu/courses/1498218/assignments/11723270
     -->  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 
     <style type="text/css">
 
+div{
+     position: fixed;*/
+            top: -500px;
+            left: 500px;
+            rotate: -30deg;
+            border-left: 10px solid gray;
+            padding: 18px;
+            padding-top:600px;
+            height: 2000px;
+            position:fixed;
+
+
+
+    p {
+        font-family: "Dancing Script", cursive;, sans-serif;
+            font-size:60px;
+            margin-top:0;
+            margin-bottom:0;
+            line-height: 100%;
+            letter-spacing:3px;
+}
+
+#grow:hover
+  cursor: pointer; 
+}
     </style>
+
 </head>
 <body>
 
-    <h1>This is a Manifesto</h1>
-    <p>This is a paragraph.</p>
+    <p id="grow">DO SOMETHING.</p>
+    <p id="shrink">Start small,</p> 
+    <p>start local,</p>
+    <p>keep going.</p>
+
+
+<script type="text/javascript">
+let g = document.getElementById("grow");
+
+// set the font-size property in JavaScript
+g.style.fontSize = "60px";
+
+// add a function to the onclick event
+g.onclick = function(){
+
+     // determine current font size and convert it to an integer
+     let fs = Number(this.style.fontSize.replace("px",""));
+
+     // make sure it worked
+     console.log(fs);
+
+     // change the color of the clicked element 
+     this.style.color = "red";
+
+     // change the font size to increase it by 10%
+     this.style.fontSize = fs * 1.1 + "px";
+};
+</script>
+
+<script type="text/javascript">
+let s = document.getElementById("shrink");
+
+// set the font-size property in JavaScript
+s.style.fontSize = "60px";
+
+// add a function to the onclick event
+s.onclick = function(){
+
+     // determine current font size and convert it to an integer
+     let fs = Number(this.style.fontSize.replace("px",""));
+
+     // make sure it worked
+     console.log(fs);
+
+     // change the color of the clicked element 
+     this.style.color = "blue";
+
+     // change the font size to increase it by 10%
+     this.style.fontSize = fs * 0.9 + "px";
+};
+</script>
+
+
 
 </body>
 </html> 
