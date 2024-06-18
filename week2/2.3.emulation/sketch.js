@@ -1,9 +1,8 @@
-<<<<<<< Updated upstream
 
 function setup() {
   createCanvas(400, 400);
   createCanvas(600, 800);
-=======
+
 let square_size = 40;
 let cols = 14;
 let rows = 18;
@@ -14,19 +13,15 @@ let cushion = 8;
 function setup() {
   createCanvas(600, 800);
   noLoop();
->>>>>>> Stashed changes
+
 }
 
 function draw() {
   background(255);
-<<<<<<< Updated upstream
-  
 
 
 }
-=======
   background('lightgreen');
-
 
 
   translate(38,38);
@@ -65,15 +60,8 @@ function draw() {
       pop();
 
 
-
-
     }
   }
 
 
-
-
-
-
 }
->>>>>>> Stashed changes
