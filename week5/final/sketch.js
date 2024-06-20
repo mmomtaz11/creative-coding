@@ -131,3 +131,5 @@ function draw() {
  function mousePressed() {
   daytime = !daytime 
   // =! means not equal aka daytime is false which turns into nighttime
+
+ }
